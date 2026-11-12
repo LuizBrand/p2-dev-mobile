@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "872722278120",
+    "firebase_url": "https://gerenciador-tarefas-cad6c-default-rtdb.firebaseio.com",
+    "project_id": "gerenciador-tarefas-cad6c",
+    "storage_bucket": "gerenciador-tarefas-cad6c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872722278120:android:04191b0b53b1927c87cb5d",
+        "android_client_info": {
+          "package_name": "dev.luizbrand.dev_mob_p2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKe-2vHFUNf82U_2nfMGIuCCh214XVjkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
