@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 import 'themes/app_theme.dart';
 import 'themes/theme_controller.dart';
+import 'widgets/auth_gate.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,9 +28,7 @@ class MyApp extends StatelessWidget {
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode: modo,
-          home: const Scaffold(
-            body: Center(child: Text('Minhas Tarefas')),
-          ),
+            home: const AuthGate(),
         );
       },
     );
