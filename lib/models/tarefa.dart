@@ -19,10 +19,12 @@ class Tarefa {
 
   String get situacao => concluida ? 'Concluída' : 'Pendente';
 
-  String get dataFormatada {
-    final dia = dataVencimento.day.toString().padLeft(2, '0');
-    final mes = dataVencimento.month.toString().padLeft(2, '0');
-    return '$dia/$mes/${dataVencimento.year}';
+  String get dataFormatada => formatarData(dataVencimento);
+
+  static String formatarData(DateTime data) {
+    final dia = data.day.toString().padLeft(2, '0');
+    final mes = data.month.toString().padLeft(2, '0');
+    return '$dia/$mes/${data.year}';
   }
 
   Map<String, dynamic> toMap() {
@@ -48,7 +50,6 @@ class Tarefa {
     );
   }
 
-  /*Usado na edição e ao alternar pendente-concluída.*/
   Tarefa copyWith({
     String? id,
     String? titulo,
